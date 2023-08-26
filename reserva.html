@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Tavola &#x1F355;</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            color: white;
+        }
+
+        .cabecalho {
+            text-align: center;
+            padding: 20px; /* Adicionei um espaçamento para melhorar a aparência */
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        textarea {
+            width: 200px;
+            max-width: 100%;
+            color: white;
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        .rodape {
+            text-align: center;
+            color: white;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="header">
+        <h1>Bella Tavola &#x1F355; </h1>
+    </div>
+
+    <div class="cabecalho">
+        <p>Tradição e sabor italiano</p>
+    </div>
+
+    <div class="menu">
+        <a href="pagina_inicial.html">Página Inicial</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="">Faça sua Reserva</a>
+        <a href="contato.html">Contato</a>
+    </div>
+
+    <div class="conteudo">
+        <section id="reserva" class="section">
+            <h2>Faça sua Reserva</h2>
+            <form id="reservation-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="people">Quantidade de pessoas:</label>
+                <input type="number" id="people" name="people" required><br>
+
+                <label for="date">Data da reserva:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="comments">Observação:</label>
+                <textarea id="comments" name="comments"></textarea><br>
+
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="rodape">
+        <div class="footer">
+            <p>Todos os direitos reservados &copy; 2023</p>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
